@@ -33,7 +33,7 @@ namespace BibliotecaDejogos
                 Console.Write("Opcao: ");
 
                 bool resultado;
-                String opcao = Console.ReadLine();
+                String opcao = ""+Console.ReadLine();
 
                 switch (opcao)
                 {
@@ -101,11 +101,11 @@ namespace BibliotecaDejogos
         {
             Console.Clear();
             Console.Write("Titulo: ");
-            String titulo = Console.ReadLine();
+            String titulo =""+Console.ReadLine();
             Console.Write("Ano: ");
             int ano = Convert.ToInt32(Console.ReadLine());
             Console.Write("Gênero: ");
-            String genero = Console.ReadLine();
+            String genero =""+Console.ReadLine();
             Console.Write("Máx. Jogadores: ");
             int maxJogadores = Convert.ToInt32(Console.ReadLine());
             Console.Write("Metacritic: ");
@@ -174,13 +174,13 @@ namespace BibliotecaDejogos
                 Console.WriteLine("O jogo escolhido foi: "+ jogoEscolhido.getTitulo());
 
             Console.Write("Titulo: ");
-            String titulo = Console.ReadLine();
+            String titulo =""+Console.ReadLine();
             jogoEscolhido.setTitulo(titulo);
             Console.Write("Ano: ");
             int ano = Convert.ToInt32(Console.ReadLine());
             jogoEscolhido.setAno(ano);
             Console.Write("Gênero: ");
-            String genero = Console.ReadLine();
+            String genero = ""+Console.ReadLine();
             jogoEscolhido.setGenero(genero);
             Console.Write("Máx. Jogadores: ");
             int maxJogadores = Convert.ToInt32(Console.ReadLine());
@@ -204,14 +204,15 @@ namespace BibliotecaDejogos
             foreach(Jogo jogo in listaJogos)
             {
                 numero_lista_jogo++;
-               Console.Write( numero_lista_jogo +" - ");
-       
-                Console.Write("Titulo: ");
-                Console.WriteLine(jogo.getTitulo());
-                Console.Write("Ano: ");
-                Console.WriteLine(jogo.getAno());
-                Console.WriteLine("==========");
+              
                 Console.WriteLine("");
+                Console.WriteLine("====================");
+                Console.Write( numero_lista_jogo +"o ");
+                Console.Write("Jogo: ");
+                Console.WriteLine(jogo.getTitulo());
+                Console.Write("====================");
+                Console.WriteLine("");
+
 
        
             }
