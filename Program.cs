@@ -126,10 +126,17 @@ namespace BibliotecaDejogos
             foreach(Jogo jogo in listaJogos)
             {
                 Console.WriteLine("");
+                Console.WriteLine("==========");
                 Console.Write("Titulo: ");
                 Console.WriteLine(jogo.getTitulo());
                 Console.Write("Ano: ");
                 Console.WriteLine(jogo.getAno());
+                Console.Write("Genero: ");
+                Console.WriteLine(jogo.getGenero());
+                Console.Write("Máximo de Jogadores: ");
+                Console.WriteLine(jogo.getMaxJogadores());
+                Console.Write("Metacritic: ");
+                Console.WriteLine(jogo.getMetacritic());
                 Console.WriteLine("==========");
                 Console.WriteLine("");
 
@@ -149,13 +156,12 @@ namespace BibliotecaDejogos
             foreach(Jogo jogo in listaJogos)
             {
                 numero_lista_jogo++;
-                Console.Write( numero_lista_jogo +" - ");
-               
-                Console.Write("Titulo: ");
+                Console.WriteLine("");
+                Console.WriteLine("====================");
+                Console.Write( numero_lista_jogo +"o ");
+                Console.Write("Jogo: ");
                 Console.WriteLine(jogo.getTitulo());
-                Console.Write("Ano: ");
-                Console.WriteLine(jogo.getAno());
-                Console.WriteLine("==========");
+                Console.Write("====================");
                 Console.WriteLine("");
 
        

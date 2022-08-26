@@ -19,8 +19,7 @@ namespace BibliotecaDejogos.Classes
         int maxJogadores;
         int metacritic;
 
-      public static int numeroCadastro;
-        int numeroCadastroAtual;
+   
   
 
         //CONSTRUTORES
@@ -32,8 +31,7 @@ namespace BibliotecaDejogos.Classes
             this.genero = genero;
             this.maxJogadores = maxJogadores;
             this.metacritic = metacritic;
-            numeroCadastro++;
-            this.numeroCadastroAtual = numeroCadastro;
+        
         }
 
         public Jogo(String titulo, int ano, String genero,
@@ -43,8 +41,7 @@ namespace BibliotecaDejogos.Classes
             this.ano = ano;
             this.genero = genero;
             this.maxJogadores = maxJogadores;
-            numeroCadastro++;
-            this.numeroCadastroAtual = numeroCadastro;
+        
         }
 
         //METODOS DE ACESSO
@@ -70,11 +67,12 @@ namespace BibliotecaDejogos.Classes
             return this.maxJogadores;
         }
 
-        public int getNumeroCadastroAtual(){
-            return numeroCadastroAtual;
+          public int getMetacritic ()
+        {
+            return this.metacritic;
         }
 
-
+     
 
 
 
